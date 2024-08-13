@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* création des colonnes en % avec 6 chiffres après la virgule*/
+.col_1 {width: 8.333333%;}
+.col_2 {width: 16.666666%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.333333%; text-align: center;}
+.col_5 {width: 41.666666%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.333333%;}
+.col_8 {width: 66.666666%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.333333%;}
+.col_11 {width:91.666666%;}
+.col_12 {width: 100%;}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header{
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.myNav{
+    padding-top: 40px;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-bottom: 10%;
+}
+
+.scroll{
+    color: aliceblue;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.delivery-icon{
+    color: #ADD981;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+section p {
+    font-size: 18px;
+}
+
+.line{
+    height: 8px;
+    width: 50px;
+    background-color:  #ADD981;
+}
+h2{
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card2 {
+    width: 100%;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footerCard {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img1h {
+    background-image: url('../img/nos_meilleures_ventes/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img2h{
+    background-image: url(../img/nos_meilleures_ventes/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3h{
+    background-image: url(../img/nos_meilleures_ventes/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4h{
+    background-image: url(../img/nos_meilleures_ventes/4.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.card::before {
+    content: "En savoir plus";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    transition: left 0.4s;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card:hover::before {
+    left: 0;
+}
+
+.card2::before {
+    content: "En savoir plus";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    transition: left 0.4s;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card2:hover::before {
+    left: 0;
+}
+
+.img1m{
+    background-image: url(../img/nos_plantes/1.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.img2m{
+    background-image: url(../img/nos_plantes/2.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.img3m{
+    background-image: url(../img/nos_plantes/3.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.img4m{
+    background-image: url(../img/nos_plantes/4.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.img5m{
+    background-image: url(../img/nos_plantes/5.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+.img6m{
+    background-image: url(../img/nos_plantes/6.jpg);
+    background-size: cover;
+    background-position: center; ;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 18px;
+}
+
+@media (max-width: 550px) {
+    .col_3{
+        width: 100%;
+    }
+    .col_6{
+        width: 100%;
+    }
+    .col_1{
+        width: 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
